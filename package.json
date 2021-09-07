@@ -1,0 +1,47 @@
+{
+  "name": "cra-template-rescript-parcel",
+  "version": "0.0.0-development",
+  "author": "Václav Hrach",
+  "license": "MIT",
+  "description": "ReScript + React + Parcel template for Create React App",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vaclavhrach/cra-template-rescript-parcel.git"
+  },
+  "homepage": "https://github.com/vaclavhrach/cra-template-rescript-parcel",
+  "bugs": "https://github.com/vaclavhrach/cra-template-rescript-parcel/issues",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "rescript",
+    "parcel"
+  ],
+  "scripts": {
+    "commit": "git-cz",
+    "release": "semantic-release",
+    "acp": "git add . && npm run commit && git push",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "semantic-release": "^17.4.7"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ],
+    "verifyConditions": [
+      "@semantic-release/changelog"
+    ],
+    "prepare": [
+      "@semantic-release/changelog"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

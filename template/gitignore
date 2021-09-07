@@ -1,0 +1,25 @@
+# ReScript
+lib
+.merlin
+.bsb.lock
+
+# Intellij
+.idea
+
+# vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Parcel
+.parcel-cache
+dist
+
+# npm
+node_modules
+
+# macOS
+.DS_Store
